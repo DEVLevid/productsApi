@@ -2,7 +2,7 @@ package com.productsApi.model;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 public class Product {
@@ -13,7 +13,7 @@ public class Product {
     private String name;
     private String description;
     private BigDecimal price;
-    private LocalDate registerDate;
+    private LocalDateTime registerDate;
 
     public Long getId() {
         return id;
@@ -47,11 +47,11 @@ public class Product {
         this.price = price;
     }
 
-    public LocalDate getRegisterDate() {
+    public LocalDateTime getRegisterDate() {
         return registerDate;
     }
 
-    public void setRegisterDate(LocalDate registerDate) {
+    public void setRegisterDate(LocalDateTime registerDate) {
         this.registerDate = registerDate;
     }
 
